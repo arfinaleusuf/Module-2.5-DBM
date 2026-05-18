@@ -1,0 +1,9 @@
+data : 
+    - Raw facts and figures
+    - Does not give clear meaning
+    - Example: 101, Arif, 50000
+
+information:
+    - Processed and organized data
+    - Gives meaningful understanding
+    - Example: Arif's salary is 50000
