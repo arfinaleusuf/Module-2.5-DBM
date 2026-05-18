@@ -1,0 +1,20 @@
+CREATE table Employee  (
+    Employeeid INT PRIMARY KEY,
+    EmployeeName VARCHAR(50),
+    EmployeeSalary DECIMAL(10,2)
+    JoiningDate DATE,
+);
+
+INSERT INTO Employee 
+(EmployeeId, EmployeeName, EmployeeSalary, JoiningDate)
+VALUES
+(1, 'Arif', 50000, '2025-01-10');
+
+INSERT INTO Employee 
+(EmployeeId, EmployeeName, EmployeeSalary, JoiningDate)
+VALUES
+(2, 'Rahim', 45000, '2025-02-15');
+
+
+DELETE FROM Employee
+WHERE EmployeeId = 2;
