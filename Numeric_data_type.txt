@@ -1,0 +1,6 @@
+Five Numeric Data Types of MySQL
+INT
+BIGINT
+FLOAT
+DOUBLE
+DECIMAL
