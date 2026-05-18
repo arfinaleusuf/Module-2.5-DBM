@@ -1,0 +1,36 @@
+1. Primary Key
+
+    A Primary Key uniquely identifies each record in a table.
+    It cannot contain NULL values.
+    
+    CREATE TABLE Student (
+    StudentId INT PRIMARY KEY,
+    StudentName VARCHAR(50)
+);
+
+2. Composite Primary Key
+
+    When two or more columns together create a primary key, it is called a Composite Primary Key.
+
+    CREATE TABLE CourseEnrollment (
+    StudentId INT,
+    CourseId INT,
+    PRIMARY KEY (StudentId, CourseId)
+);
+
+3. Foreign Key
+
+    A Foreign Key creates a relationship between two tables.
+
+    CREATE TABLE Department (
+    DepartmentId INT PRIMARY KEY,
+    DepartmentName VARCHAR(50)
+);
+
+CREATE TABLE Employee (
+    EmployeeId INT PRIMARY KEY,
+    EmployeeName VARCHAR(50),
+    DepartmentId INT,
+    FOREIGN KEY (DepartmentId) REFERENCES Department(DepartmentId)
+);
+
